@@ -5,11 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form practice</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 
 <body>
     <div id="container">
-        <form action="">
+        <form id="form1" action="">
+            <div class="form1-div">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="form1-div">
+                <label for="country">Country:</label>
+                <input type="text" name>
+            </div>
+            <div class="form1-div">
+                <label for="zip">Zip Code:</label>
+                <input type="text">
+            </div>
+            <div class="form1-div">
+                <label for="pswd">Password:</label>
+                <input type="text">
+            </div>
+            <div class="form1-div">
+                <label for="pswd-confirm">Password Confirm:</label>
+                <input type="text">
+            </div>
+            <div class="form1-div"><button type="submit" id="submit-form">Submit</button></div>
         </form>
     </div>
 
