@@ -10,7 +10,7 @@
 
 <body>
     <div id="container">
-        <form id="form1" action="">
+        <form id="form1" action="" novalidate>
             <div class="form1-div">
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="email" required>
@@ -18,19 +18,20 @@
             </div>
             <div class="form1-div">
                 <label for="country">Country:</label>
-                <input type="text" name="country" id="country" required>
+                <input type="text" name="country" id="country" pattern="\w+(\s\w+)*" required>
             </div>
             <div class="form1-div">
                 <label for="zip">Zip Code:</label>
-                <input type="text" name="zip" id="zip" required>
+                <input type="text" name="zip" id="zip" pattern="\d{5}" required>
             </div>
             <div class="form1-div">
                 <label for="pswd">Password:</label>
-                <input type="password" name="pswd" id="pswd" required>
+                <input type="password" name="pswd" id="pswd" minlength="3" maxlength="20" required>
+                <span class="pswd-error">error</span>
             </div>
             <div class="form1-div">
                 <label for="pswd-confirm">Password Confirm:</label>
-                <input type="password" name="pswd-confirm" id="pswd-confirm" required>
+                <input type="password" name="pswd-confirm" id="pswd-confirm" minlength="3" maxlength="20" required>
             </div>
             <div class="form1-div"><button type="submit" id="submit-form">Submit</button></div>
         </form>

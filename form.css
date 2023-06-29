@@ -10,3 +10,19 @@
     cursor: pointer;
     padding: 25px;
 }
+
+form input:invalid:hover {
+    border-color: red
+}
+
+#pswd:invalid+.pswd-error {
+    color: red;
+}
+
+#pswd:valid+.pswd-error {
+    display: none;
+}
+
+.pswd-error {
+    font-size: 1rem
+}
